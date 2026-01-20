@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Vijay A, Senior Software Engineer">
+  <title>Vijay A | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 9999px;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 4px solid white;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .skill {
+      background-color: #e5e7eb;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    
+    <h1 class="text-4xl font-bold">Vijay A</h1>
+    <p class="text-xl mt-2">Senior Software Engineer | Java | Spring Boot | AWS | React</p>
+    <a href="#contact" class="mt-4 inline-block px-6 py-2 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-100">Get in Touch</a>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+  <h2>About Me</h2>
+  <div class="card flex flex-col md:flex-row items-center gap-6">
+    <img 
+      src="https://media.licdn.com/dms/image/v2/D5603AQHyH4sM35Bxgw/profile-displayphoto-crop_800_800/B56ZuVktE0JgAI-/0/1767740987524?e=1770249600&v=beta&t=7mz2Tm3rI6WUOkxrCCwTKpkvlZIYe6VnnHDqeqRTn5Y" 
+      alt="Vijay A" 
+      class="w-48 h-48 rounded-lg object-cover shadow-md" 
+    />
+    <p class="text-lg">
+      I’m a Senior Software Engineer with 7+ years of experience in developing cloud-native, enterprise-grade applications using Java, Spring Boot, and React. I specialize in building scalable microservices, REST APIs, and real-time solutions for domains like retail, healthcare, and finance. Skilled in AWS (EKS, Lambda, SNS/SQS), Kafka, Docker, CI/CD, and TDD.
+    </p>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid card">
+      <div class="skill">Java 8/11/17</div>
+      <div class="skill">Kotlin</div>
+      <div class="skill">Spring Boot</div>
+      <div class="skill">React.js</div>
+      <div class="skill">GCP</div>
+      <div class="skill">AWS (EKS, Lambda)</div>
+      <div class="skill">Kafka</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">Jenkins</div>
+      <div class="skill">GitHub Actions</div>
+      <div class="skill">JUnit</div>
+      <div class="skill">CI/CD</div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="card">
+      <h3 class="text-xl font-semibold">Sr. Software Engineer, Truist</h3>
+      <p><strong>Dec 2024 – Present</strong></p>
+      <ul class="mt-2">
+        <li>Led microservices development with Java 17, Spring Boot 3.x</li>
+        <li>Implemented fraud detection logic using asynchronous processing.</li>
+        <li>Built responsive UIs with React.js and Redux Toolkit.</li>
+        <li>Deployed with Jenkins, GitHub Actions, and Helm.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="text-xl font-semibold">Software Engineer, Marsh</h3>
+      <p><strong>Jan 2024 – Nov 2024</strong></p>
+      <ul class="mt-2">
+        <li>Built a fraud detection platform with Kafka and Spring Boot.</li>
+        <li>Deployed microservices on AWS EKS and OpenShift.</li>
+        <li>Implemented real-time event-driven workflows and WebSockets.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="text-xl font-semibold">Software Developer, Kohl's</h3>
+      <p><strong>Aug 2021 – Jun 2023</strong></p>
+      <ul class="mt-2">
+        <li>Developed patient scheduling and messaging microservices.</li>
+        <li>Ensured HIPAA-compliant deployments on AWS (EC2, RDS, Lambda).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="text-xl font-semibold">Software Developer, Evolve Technologies</h3>
+      <p><strong>May 2018 – Jul 2021</strong></p>
+      <ul class="mt-2">
+        <li>Built backend services using Java, Spring, and MS SQL Server.</li>
+        <li>Contributed to business workflow automation and data integration.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="certifications" class="section bg-gray-50" aria-labelledby="certifications-heading"> 
+  <h2 id="certifications-heading" class="text-4xl font-bold mb-8 text-center">Certifications</h2>
+  <div class="card max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+    <!-- Certified ScrumMaster (CSM) -->
+    <div class="flex flex-col items-center text-center">
+      <img 
+        src="https://i.postimg.cc/L5M8B8Mj/Scrum-badge.webp" 
+        alt="Certified ScrumMaster (CSM) Badge" 
+        class="certification-logo mb-2" 
+        loading="lazy"
+        style="width: 150px; height: auto;" 
+        onerror="this.style.display='none';"
+      />
+      <span class="mb-2 font-semibold">Certified ScrumMaster (CSM), Scrum Alliance – 2024</span>
+      <a href="https://bcert.me/sxhxawhlu" target="_blank" class="text-blue-600 text-sm underline">Certificate Credential</a>
+    </div>
+
+    <!-- AWS Developer Associate -->
+    <div class="flex flex-col items-center text-center">
+      <img 
+        src="https://i.postimg.cc/tC7YgYKt/aws-certified-developer-associate.png" 
+        alt="AWS Certified Developer – Associate Badge" 
+        class="certification-logo mb-2" 
+        loading="lazy"
+        style="width: 150px; height: auto;" 
+        onerror="this.style.display='none';"
+      />
+      <span class="mb-2 font-semibold">AWS Certified Developer – Associate, Amazon Web Services – 2025</span>
+      <span class="text-sm text-gray-600">Credential ID: 71374d3d9e1c416d87bfb54d1c032421</span>
+    </div>
+
+  </div>
+</section>
+ <section id="contact" class="section bg-white py-12">
+  <h2 class="text-4xl font-bold mb-8 text-center">Contact</h2>
+  <div class="card max-w-3xl mx-auto space-y-6 text-lg">
+
+    <!-- Email -->
+    <div class="flex items-center space-x-4">
+      <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M16 12H8m8 0H8m8 0H8m-6 0a9 9 0 1118 0 9 9 0 01-18 0z"></path>
+      </svg>
+      <a href="mailto:vijayatla11@gmail.com" class="text-blue-600 hover:underline">vijayatla11@gmail.com</a>
+    </div>
+
+    <!-- Phone -->
+    <div class="flex items-center space-x-4">
+      <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 5a2 2 0 012-2h2.586a1 1 0 01.707.293l2.121 2.121a1 1 0 01.293.707V9a1 1 0 01-1 1H9a1 1 0 00-.707.293L5.586 13A2 2 0 015 14.414V17a2 2 0 002 2h2.586a1 1 0 00.707-.293l2.121-2.121a1 1 0 00.293-.707V15a1 1 0 011-1h2a1 1 0 011 1v2a6 6 0 01-6 6H9a9 9 0 01-9-9V9a9 9 0 019-9h6a6 6 0 016 6v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V6a2 2 0 00-2-2H9"></path>
+      </svg>
+      <a href="tel:+16167372255" class="text-blue-600 hover:underline">+1 (616) 737-2255</a>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="flex items-center space-x-4">
+      <svg class="w-6 h-6 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-.966 0-1.5-.723-1.5-1.45 0-.738.545-1.45 1.525-1.45s1.5.712 1.5 1.45c0 .727-.534 1.45-1.525 1.45zm13.5 11.3h-3v-5.604c0-1.338-.478-2.253-1.673-2.253-.912 0-1.455.615-1.695 1.208-.087.212-.109.507-.109.802v5.847h-3s.039-9.49 0-10.472h3v1.482c.397-.613 1.106-1.486 2.69-1.486 1.965 0 3.442 1.284 3.442 4.042v6.434z" />
+      </svg>
+      <a href="https://www.linkedin.com/in/vijay-atla11" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/vijay-atla11</a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="flex items-center space-x-4">
+      <svg class="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.385-1.333-1.753-1.333-1.753-1.09-.746.082-.73.082-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.81 1.305 3.495.997.11-.776.42-1.306.763-1.605-2.665-.305-5.467-1.334-5.467-5.933 0-1.312.47-2.382 1.237-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404c1.02.005 2.045.137 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.236 1.91 1.236 3.222 0 4.61-2.807 5.625-5.48 5.922.43.372.823 1.102.823 2.222v3.293c0 .319.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z" />
+      </svg>
+      <a href="https://github.com/vijayatla11" target="_blank" class="text-blue-600 hover:underline">github.com/vijayatla11</a>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Vijay A. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
